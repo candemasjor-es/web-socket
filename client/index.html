@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat tipo WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="whatsapp-container">
+        <header class="wa-header">
+            <span class="wa-title">Chat app</span>
+        </header>
+        <ul id="listMessages" class="wa-messages" aria-live="polite" aria-label="Lista de mensajes">
+            <!-- Los mensajes se insertarán aquí -->
+        </ul>
+        <form class="wa-input-container" id="formSend" autocomplete="off">
+            <input type="text" 
+                   placeholder="Escribe un mensaje..." 
+                   id="inputMessage"
+                   aria-label="Escribir mensaje"
+                   autocomplete="off"
+                   required>
+            <button id="btnSend" aria-label="Enviar mensaje" type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
