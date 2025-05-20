@@ -18,7 +18,7 @@ const sendMessage = () => {
 
 const createMessageElement = (senderUsername, text) => {
   const li = document.createElement('li');
-  // Usa las clases de WhatsApp
+  // Usa las clases de diseño
   li.classList.add('wa-message');
   if (senderUsername === username) {
     li.classList.add('sent');
